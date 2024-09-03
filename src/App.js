@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Generative AI App from Psitron</h1>
+        <h1 className="App-title">Generative AI For All Business</h1>
       </header>
       <div className="App-body">
         <form onSubmit={handleSubmit}>
