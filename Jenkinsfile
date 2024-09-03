@@ -6,6 +6,11 @@ pipeline {
                 sh 'npm install'
             }
         }
+        stage('Approval') {
+            steps {
+                input message: 'Manual approval required before proceeding to the Test stage', ok: 'Approve'
+            }
+        }
         stage('Test') {
             steps {
                 sh './jenkins/scripts/test.sh'
